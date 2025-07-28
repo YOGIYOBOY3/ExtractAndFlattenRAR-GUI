@@ -1,0 +1,24 @@
+<Window x:Class=""ExtractAndFlattenRAR.MainWindow""
+        xmlns=""http://schemas.microsoft.com/winfx/2006/xaml/presentation""
+        xmlns:x=""http://schemas.microsoft.com/winfx/2006/xaml""
+        Title=""Extract & Flatten RAR Files""
+        Height=""400"" Width=""600""
+        Icon=""RAR.ico"">
+    <Grid Margin=""20"">
+        <StackPanel>
+            <TextBlock Text=""Source Folder:""/>
+            <TextBox Name=""SourcePathBox"" Margin=""0,0,0,10""/>
+            <Button Content=""Browse Source"" Click=""BrowseSource_Click"" Margin=""0,0,0,20""/>
+
+            <TextBlock Text=""Destination Folder:""/>
+            <TextBox Name=""DestPathBox"" Margin=""0,0,0,10""/>
+            <Button Content=""Browse Destination"" Click=""BrowseDest_Click"" Margin=""0,0,0,20""/>
+
+            <CheckBox Name=""FlattenCheck"" Content=""Flatten after extraction"" Margin=""0,0,0,20""/>
+
+            <ProgressBar Name=""ProgressBar"" Height=""20"" Margin=""0,0,0,20""/>
+
+            <Button Content=""Start Extraction"" Click=""StartExtract_Click""/>
+        </StackPanel>
+    </Grid>
+</Window>
